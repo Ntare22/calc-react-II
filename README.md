@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# calc-react
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+- clone this repo, by running `git clone https://github.com/Ntare22/calc-react.git`
+- run `npm install` to install dependencies
+- run `npm start` to start the application
 
 ## Available Scripts
 
@@ -68,3 +76,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Author
+
+👤 **Jim Ntare**
+
+- GitHub: [@Ntare22](https://github.com/Ntare22)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
