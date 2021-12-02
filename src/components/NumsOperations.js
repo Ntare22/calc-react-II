@@ -4,11 +4,11 @@ const numsOperations = [
   { key: 'clear', value: 'AC' },
   { key: 'plusMinus', value: '+/-' },
   { key: 'modulo', value: '%' },
-  { key: 'divide', value: '/' },
+  { key: 'divide', value: '÷' },
   { key: 'seven', value: 7 },
   { key: 'eight', value: 8 },
   { key: 'nine', value: 9 },
-  { key: 'multiply', value: '*' },
+  { key: 'multiply', value: 'x' },
   { key: 'four', value: 4 },
   { key: 'five', value: 5 },
   { key: 'six', value: 6 },
@@ -22,10 +22,10 @@ const numsOperations = [
   { key: 'equals', value: '=' },
 ];
 
-const buttons = numsOperations.map((item) => <button className="calc-btn" id={item.key} type="submit" key={item.key}>{item.value}</button>);
-
 export default class NumsOperations extends Component {
   render() {
+    const { handleClick } = this.props;
+    const buttons = numsOperations.map((item) => <button className="calc-btn" id={item.key} onClick={handleClick} value={item.value} type="submit" key={item.key}>{item.value}</button>);
     return <div className="container">{buttons}</div>;
   }
 }

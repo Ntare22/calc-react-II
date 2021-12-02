@@ -13,12 +13,15 @@ body {
 #root {
   width: 30%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  width: 100%;
+
+  /* width: 100%; */
 }
 
 .calc-screen {
@@ -26,11 +29,12 @@ body {
   color: #fff;
   padding: 40px 10px;
   font-size: 35px;
+  text-align: right;
 }
 
-.calc-screen span {
+/* .calc-screen span {
   float: right;
-}
+} */
 
 .calc-btn {
   height: 50px;
