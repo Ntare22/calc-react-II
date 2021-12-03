@@ -12,11 +12,9 @@ const App = () => {
     setState((prev) => calculate(prev, e.target.value));
   };
 
-  const { total, next } = state;
-  const stateOfCalc = { total, next };
   return (
     <>
-      <Calculator handleClick={clickHandler} calcState={stateOfCalc} />
+      <Calculator handleClick={clickHandler} calcState={state} />
     </>
   );
 };

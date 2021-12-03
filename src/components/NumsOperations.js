@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const numsOperations = [
   { key: 'clear', value: 'AC' },
@@ -22,10 +22,10 @@ const numsOperations = [
   { key: 'equals', value: '=' },
 ];
 
-export default class NumsOperations extends Component {
-  render() {
-    const { handleClick } = this.props;
-    const buttons = numsOperations.map((item) => <button className="calc-btn" id={item.key} onClick={handleClick} value={item.value} type="submit" key={item.key}>{item.value}</button>);
-    return <div className="container">{buttons}</div>;
-  }
-}
+const NumsOperations = (props) => {
+  const { handleClick } = props;
+  const buttons = numsOperations.map((item) => <button className="calc-btn" id={item.key} onClick={handleClick} value={item.value} type="submit" key={item.key}>{item.value}</button>);
+  return <div className="container">{buttons}</div>;
+};
+
+export default NumsOperations;
