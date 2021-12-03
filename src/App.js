@@ -1,12 +1,22 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import calculate from './logic/calculate';
 import Calculator from './components/Calculator';
 
-export default class App extends Component {
-  render() {
-    return (
-      <>
-        <Calculator />
-      </>
-    );
-  }
-}
+const App = () => {
+  const [state, setState] = useState({
+    total: 0,
+    next: 0,
+  });
+
+  const clickHandler = (e) => {
+    setState((prev) => calculate(prev, e.target.value));
+  };
+
+  return (
+    <>
+      <Calculator handleClick={clickHandler} calcState={state} />
+    </>
+  );
+};
+
+export default App;
