@@ -25,7 +25,7 @@ const numsOperations = [
 const NumsOperations = (props) => {
   const { handleClick } = props;
   const buttons = numsOperations.map((item) => <button className="calc-btn" id={item.key} onClick={handleClick} value={item.value} type="submit" key={item.key}>{item.value}</button>);
-  return <div className="container">{buttons}</div>;
+  return <div className="calc-container">{buttons}</div>;
 };
 
 export default NumsOperations;

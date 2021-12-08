@@ -1,22 +1,13 @@
-import React, { useState } from 'react';
-import calculate from './logic/calculate';
-import Calculator from './components/Calculator';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import RouteComponent from './components/RouteComponent';
 
-const App = () => {
-  const [state, setState] = useState({
-    total: 0,
-    next: 0,
-  });
-
-  const clickHandler = (e) => {
-    setState((prev) => calculate(prev, e.target.value));
-  };
-
-  return (
-    <>
-      <Calculator handleClick={clickHandler} calcState={state} />
-    </>
-  );
-};
+const App = () => (
+  <React.StrictMode>
+    <BrowserRouter>
+      <RouteComponent />
+    </BrowserRouter>
+  </React.StrictMode>
+);
 
 export default App;
