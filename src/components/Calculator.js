@@ -13,10 +13,13 @@ const Calculator = (props) => {
   }
 
   return (
-    <>
-      <input className="calc-screen" placeholder="0" value={value} readOnly />
-      <NumsOperations handleClick={handleClick} />
-    </>
+    <div className="calc-wrap">
+      <h2>Let&apos;s do some Maths!</h2>
+      <div>
+        <input className="calc-screen" placeholder="0" value={value} readOnly />
+        <NumsOperations handleClick={handleClick} />
+      </div>
+    </div>
   );
 };
 
