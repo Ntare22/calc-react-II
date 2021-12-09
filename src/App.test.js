@@ -24,4 +24,15 @@ describe('All pages open on nav link click', () => {
     userEvent.click(screen.getByText('Calculator'));
     expect(screen.getByText('Let\'s do some Maths!')).toBeInTheDocument();
   });
+
+  it('Quotes Page opens on \'Quote\' button', () => {
+    render(
+      <MemoryRouter>
+        <RouteComponent />
+      </MemoryRouter>,
+    );
+    userEvent.click(screen.getByText('Quote'));
+
+    expect(screen.getByText('Mathematics is not about numbers, equations, computations, or algorithms; it is about understanding. -William Paul Thurston')).toBeInTheDocument();
+  });
 });
