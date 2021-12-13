@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Links
+- [Netlify Link](https://ecstatic-shaw-1d12d8.netlify.app/calculator)
+- [Heroku Link](https://math-magicians-microverse.herokuapp.com/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
